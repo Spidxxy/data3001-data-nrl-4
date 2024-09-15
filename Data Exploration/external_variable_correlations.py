@@ -1,6 +1,7 @@
 import pandas as pd 
 import scipy.stats as stats
 
+# edited PTB data from events
 df = pd.read_csv('/Users/nabiharajput/Desktop/DATA3001/UNSW Data/Data Exploration/PTB_event_data.csv')
 
 ### WEATHERCONDITIONID ###
