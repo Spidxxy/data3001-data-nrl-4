@@ -11,8 +11,8 @@ conditions = [
     (df['SeasonId'] >= 2022)                         # If Year >= 2022
 ]
 
-values = [0, 1, 2]  # 0 for first condition, 1 for second, 2 for third
+value = [0, 1, 2]  # 0 for first condition, 1 for second, 2 for third
 
-df['RuleChange'] = np.select(conditions, values, default=np.nan)  # Else: NA (NaN in pandas)
+df['RuleChange'] = np.select(conditions, value, default=np.nan)  # Else: NA (NaN in pandas)
 
 df.to_csv(r'/Users/nabiharajput/Desktop/DATA3001/UNSW Data/Data Product/2020-2023 PTB and Tackle Filtered.csv', index=False)
