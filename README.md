@@ -66,3 +66,9 @@ We plan for our product to be used for finding which factors affect PTB speed mo
 If you would like to get involved with this project please contact David above\! 
 
 [^1]:  ***Reference:** LeagueEyeTest (2024). If play the ball speed means something but mostly nothing, what is a better metric? \- The Rugby League Eye Test. \[online\] The Rugby League Eye Test. Available at: [https://www.rugbyleagueeyetest.com/2024/08/19/if-play-the-ball-speed-means-something-but-mostly-nothing-what-is-a-better-metric](https://www.rugbyleagueeyetest.com/2024/08/19/if-play-the-ball-speed-means-something-but-mostly-nothing-what-is-a-better-metric) / \[Accessed 15 Sep. 2024\].*
+
+## Ed's Marking
+
+Grade: 8/10
+
+Comments: The paper is well motivated and well articulated. Some more background reading (with in-text citations) is expected, which may strengthen your motivation in the overview section. Data source section could have some detailed comments about advantage/challenges of using the data set in the context of model you may have in mind for the users. In the usage section, you proposed some models to the modelling team which is a nice touch, but could have addressed some connections to these models in the data description section. Overall, a great attempt and enjoyable reading.
