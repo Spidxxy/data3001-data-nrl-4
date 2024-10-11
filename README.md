@@ -19,7 +19,7 @@ The RuleChange variable in our dataset accounts for these adjustments:
 
 This analysis will enable coaches to refine their team’s tactics and training regimens, focusing on specific tackling techniques that strategically accelerate or decelerate PTB under various game conditions. By integrating data science with practical sports strategy, our project not only enhances the analytical tools available to teams but also provides actionable insights that can transform competitive play.
 
-**NRL Rules:**
+### **NRL Rules**
 
 The National Rugby League (NRL) is a professional rugby league competition played by two teams of 13 players on a rectangular field. The objective of the game is to score more points than the opposing team by grounding the ball in the opponent’s in-goal area (a try) or by kicking the ball through the opponent’s goalposts.  
 Key rules to understand:
@@ -44,10 +44,10 @@ In the data, the rugby league field is divided into 84 zones, with each zone rep
 
 ![unnamed](https://github.com/user-attachments/assets/fa939316-85e2-46bd-8a52-2a74a26a1397)
 
-**Real-Life Example:**  
+### **Real-Life Example**  
 If a player receives the ball in Zone 14 within the Sideline Right (SR) section near their own try-line, they are positioned near the right edge of the field. If that player breaks through the defence and runs straight down the sideline, advancing through zones like 21 (SR), 28 (SR), and continues running all the way to Zone 84 (SR) in the opponent’s try-line, the player has covered the full length of the field along the right sideline to score a try. 
 
-**Previous Work**  
+## **Previous Work**  
 Previous analyses of play-the-ball (PTB) speed in the NRL have consistently shown a trend of increasing speed over recent years. For example, data from 2024 shows that PTB speeds have improved by one-tenth of a second compared to 2023, and 2023 was faster than 2022 by six-hundredths of a second. These trends indicate that the game is becoming faster over time.
 ![unnamed (1)](https://github.com/user-attachments/assets/05d79d4a-4d57-489c-a45e-2470f1648316)
 
@@ -95,6 +95,8 @@ The data used in this project consists of multiple datasets from NRL match event
 2. **Player Data (in event data):** Player-specific data such as player IDs, player positions and individual statistics were excluded from our analysis. Our focus was on understanding broader trends in PTB speed and the influence of game context rather than individual player performance. 
 
 We will filter the Event Data to focus on the tackle-PTB pairs as these events are the most relevant for our analysis. Non-related events will be excluded from the dataset with the final dataset ready for the modelling team to use in their analysis of PTB speed and its in-game impact.
+
+## **Workflow**
 
 **Step 1: Filter Rows**  
 *Filter rows to keep only the relevant information towards the objective with the aim to refine the dataset, make it more digestible and less complex.*
@@ -153,7 +155,7 @@ where *i* is the order number of the tackles.
 
 Additionally, we also create an extra feature column ‘*Number of Tackles*’ which gives the total tackles that preceded the PTB. 
 
-**Data Description** 
+## **Data Description** 
 
 The data product created in this project will leverage the historic NRL data provided in the most efficient way possible. Each **row** in the dataset will feature a tackle-PTB event pair. This will capture the critical moment related to PTB speed which is the tackle followed by the actual play-the-ball. 
 
@@ -216,11 +218,11 @@ We have completed our background research, asked experts in the field for what t
 
 After we complete this data filtering and joining, we will be working on cleaning the data. Removing anything that has inconsistencies, or large missing data points which could negatively affect accuracy of models using this data product. Then we will move onto the steps outlined in the *Workflow* to create the final data product.
 
-**Usage** 
+## **Usage** 
 
 We plan for our product to be used for finding which factors affect PTB speed more in certain scenarios, likely scenarios that coaches would specifically ask about. A few ways this could be handled are using **K-Means Clustering** to get an intuition into how similar tackles occur, and the key differences that affect PTB speed between otherwise “similar” tackles. Or an ML model (e.g. Random Forest Regression) to get a decision tree which optimises for prediction accuracy, and comfortably handles non-linear relationships like the ones we expect to see in  this real world data with a high number of variables. To ensure readability and accuracy of models, it might be advisable to standardise the data before further analysis.
 
-**Addressing peer review:**
+## **Addressing peer review**
 
 By reviewing the feedback from the peer review we have made the following modifications to the README file:
 
