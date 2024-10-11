@@ -49,6 +49,7 @@ If a player receives the ball in Zone 14 within the Sideline Right (SR) section 
 
 ## **Previous Work**  
 Previous analyses of play-the-ball (PTB) speed in the NRL have consistently shown a trend of increasing speed over recent years. For example, data from 2024 shows that PTB speeds have improved by one-tenth of a second compared to 2023, and 2023 was faster than 2022 by six-hundredths of a second. These trends indicate that the game is becoming faster over time.
+
 ![unnamed (1)](https://github.com/user-attachments/assets/05d79d4a-4d57-489c-a45e-2470f1648316)
 
 However, multiple studies have concluded that there is no direct correlation between faster PTB speed and outcomes, such as winning games or increasing the margin of victory (the difference in points between the two teams). A recent analysis revealed an R-squared value of 0.002, confirming the lack of significant correlation between average PTB speed and match margins.
