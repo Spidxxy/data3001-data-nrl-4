@@ -236,9 +236,11 @@ By reviewing the feedback from the peer review we have made the following modifi
    * The feedback praised the analysis of previous work on PTB but suggested that a brief explanation of why certain variables were not relevant would be helpful.   
    * To address this we expanded on factors that influence PTB like scoreboard, position from tryline and time in the game, providing context for its relevance and included graphs to support these claims.
 
-## **Support information:** Contact David on teams or via email [david.warton@unsw.edu.au](mailto:david.warton@unsw.edu.au).
+## **Support information:** 
+
+Contact David on teams or via email [david.warton@unsw.edu.au](mailto:david.warton@unsw.edu.au).
 
 ## **Contributors:** Aiden Poswell, Ivy Williams-Kelly, Nabiha Imran Rajput, Tuvya Jugnarain 
 
-If you would like to get involved with this project please contact David above\! 
+If you would like to get involved with this project please contact David above! 
 
