@@ -42,11 +42,14 @@ Key rules to understand:
 
 In the data, the rugby league field is divided into 84 zones, with each zone representing a 10m x 10m section of the playing area. The field is further categorised into 7 horizontal sections running from left to right, labelled as SL (Sideline Left), NL (Numbers Left), L (Left), C (Center), R (Right), NR (Numbers Right), and SR (Sideline Right). These sections help us analyse and understand where specific plays, tackles, or movements occur on the field. The zones are numbered to reflect both the horizontal section and the vertical progression down the field, as shown in the visual.
 
+![unnamed](https://github.com/user-attachments/assets/fa939316-85e2-46bd-8a52-2a74a26a1397)
+
 **Real-Life Example:**  
 If a player receives the ball in Zone 14 within the Sideline Right (SR) section near their own try-line, they are positioned near the right edge of the field. If that player breaks through the defence and runs straight down the sideline, advancing through zones like 21 (SR), 28 (SR), and continues running all the way to Zone 84 (SR) in the opponent’s try-line, the player has covered the full length of the field along the right sideline to score a try. 
 
 **Previous Work**  
 Previous analyses of play-the-ball (PTB) speed in the NRL have consistently shown a trend of increasing speed over recent years. For example, data from 2024 shows that PTB speeds have improved by one-tenth of a second compared to 2023, and 2023 was faster than 2022 by six-hundredths of a second. These trends indicate that the game is becoming faster over time.
+![unnamed (1)](https://github.com/user-attachments/assets/05d79d4a-4d57-489c-a45e-2470f1648316)
 
 However, multiple studies have concluded that there is no direct correlation between faster PTB speed and outcomes, such as winning games or increasing the margin of victory (the difference in points between the two teams). A recent analysis revealed an R-squared value of 0.002, confirming the lack of significant correlation between average PTB speed and match margins.
 
@@ -55,7 +58,9 @@ Factors that do influence PTB speed include:
 
 * Scoreboard: Teams tend to play faster when the score is tied to gain an advantage, on the contrary, teams will slow down the game when leading or trailing to manage the clock.  
 * Position from tryline: PTB speeds tend to be slower when teams are near their own try line as the defending team wants to slow the game down to regroup. PTB speeds are slightly faster near the opposition’s try line to create scoring opportunities and catch the defending team off guard.  
-* Time in the game: PTB speeds increase towards the end of each half, especially in close games where there is an increase in intensity to try to make the game winning play. 
+* Time in the game: PTB speeds increase towards the end of each half, especially in close games where there is an increase in intensity to try to make the game winning play.
+
+![unnamed (2)](https://github.com/user-attachments/assets/fcd3e421-06c5-4c56-a035-1713e3a8705a)                        ![unnamed (3)](https://github.com/user-attachments/assets/9e8754da-a0a3-4da4-8a26-83de8b9120d9)
 
 Reference: LeagueEyeTest (2024). If play the ball speed means something but mostly nothing, what is a better metric? \- The Rugby League Eye Test. \[online\] The Rugby League Eye Test. Available at: https://www.rugbyleagueeyetest.com/2024/08/19/if-play-the-ball-speed-means-something-but-mostly-nothing-what-is-a-better-metric / \[Accessed 15 Sep. 2024\]
 
@@ -69,15 +74,8 @@ The data used in this project consists of multiple datasets from NRL match event
    * **EventName**: The specific type of event (e.g. Tackle, PTB). This is a highly important feature because by filtering this field we can isolate the relevant tackle-PTB events for further processing.  
    * **X-Y Coordinates**: The exact location on the field where the event took place, with **XmPhysical** representing the horizontal position and **YmPhysical** representing the vertical position on the field. Each unit is equivalent to a metre and the field is modelled as 100 m long (X) and 70 m wide (Y), with the origin at the top left (0,0). Here is a diagram to better understand the layout:
 
-     
-
-     
-
-     
-
-     
-
-     
+     ![unnamed (4)](https://github.com/user-attachments/assets/a4df0c7e-0e76-4c06-9822-ae2f7644eafb)
+  
 
    The defending team is always on the right and the attacking team is on the left, when the ball is handed over teams switch sides and coordinates change (e.g. if the attacking team completed their set at (80,35) the previous defending team now begins their attack at (20,35). As a result, the previous attacking team is now on the right and the previous defending team currently attacking is now on the left. This will be useful when analysing how distance from the tryline impacts PTB speed.
 
@@ -92,9 +90,9 @@ The data used in this project consists of multiple datasets from NRL match event
      * **1:** Refers to matches where the first rule change (six-again) was implemented (round 9 2020 \- end of 2021\)  
      * **2:** Refers to matches played from 2022 and onwards with new rule change (kick restarts)   
    * **Set:** The set number of tackles within a set. Each team has 6 chances to score and after completing a set which is six tackles without an error on any of the plays, the attacking team hands the ball over to the opposing team and now the opposing team has 6 chances or tackles to score.   
-2. **Match Data:** No match data variables were used for the final data product but variables in both event and match data variables were used for newly created features.  
+1. **Match Data:** No match data variables were used for the final data product but variables in both event and match data variables were used for newly created features.  
    * **SeasonId and RoundId**: Used to track matches across different seasons and was especially useful for differentiating periods before and after rule changes.  
-3. **Player Data (in event data):** Player-specific data such as player IDs, player positions and individual statistics were excluded from our analysis. Our focus was on understanding broader trends in PTB speed and the influence of game context rather than individual player performance. 
+2. **Player Data (in event data):** Player-specific data such as player IDs, player positions and individual statistics were excluded from our analysis. Our focus was on understanding broader trends in PTB speed and the influence of game context rather than individual player performance. 
 
 We will filter the Event Data to focus on the tackle-PTB pairs as these events are the most relevant for our analysis. Non-related events will be excluded from the dataset with the final dataset ready for the modelling team to use in their analysis of PTB speed and its in-game impact.
 
