@@ -241,7 +241,9 @@ By reviewing the feedback from the peer review we have made the following modifi
 
 Contact David on teams or via email [david.warton@unsw.edu.au](mailto:david.warton@unsw.edu.au).
 
-## **Contributors:** Aiden Poswell, Ivy Williams-Kelly, Nabiha Imran Rajput, Tuvya Jugnarain 
+## **Contributors:** 
+
+**Aiden Poswell, Ivy Williams-Kelly, Nabiha Imran Rajput, Tuvya Jugnarain**. 
 
 If you would like to get involved with this project please contact David above! 
 
