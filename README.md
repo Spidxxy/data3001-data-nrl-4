@@ -171,7 +171,7 @@ The **features (columns)** will include crucial in-game variables of the event p
 | RoundID | The round in the season the game is being played |
 | Set | Set number within the match |
 | Tackle | Tackle number within the set |
-| RuleChange | Introduced qualifier for major rule changes.  0: Refers to matches played before the rule change (before round 9 2020\) 1: Refers to matches where the first rule change (six-again) was implemented (round 9 2020 \- end of 2021\) 2: Refers to matches played from 2022 and onwards with new rule change (kick restarts)  |
+| RuleChange | Introduced qualifier for major rule changes.  0: Refers to matches played before the rule change (before round 9 2020\) 1: Refers to matches where the first rule change (six-again) was implemented (round 9 2020 \- end of 2021\) 2: Refers to matches played from 2022 and onwards with new rule change (kick restarts)  |
 | Tackle{1-10}\_TackleType | This feature describes the type of tackle. Defence line: The type of tackle made is by a player positioned on the primary line of defence and is an attempt to bring the ball carrier down before they can advance further up the field.  Marker: Involves a player close to the PTB area after an initial tackle has been made. Markers try to disrupt the attacking team's play by pressuring the ball carrier or being part of a secondary tackle after first contact.  Try saver: A tackle made which had it not, would have lead to a try.  Tackle cover: A tackle which acts as backup to an already made tackle. Usually made while in the defence line by the players adjacent to the play. |
 | Tackle{1-10}\_TackleOutcome | This feature captures the outcome of the tackle these include: Made: A successful tackle where the defender brings down the ball carrier. Dominant: A tackle where the defender controls the ball carrier effectively, slowing down the attacking team's push and giving the defensive line time to reset. Turnover ball split: A tackle where the ball carrier loses possession, resulting in a turnover due to a loose carry or pressure from the tackle. Ball jolted: A tackle that causes the ball to be dislodged from the ball carrier's grasp, often leading to a knock-on or turnover. Stolen: A tackle where the defender legally strips the ball from the ball carrier, resulting in possession being gained by the defensive team. Forced/out: A tackle where the defender forces the ball carrier into touch (out of bounds), resulting in a turnover or a stoppage in play. |
 | Tackle{1-10}\_TackleArrival | The arrival order, the initial tackler will be 1, next player to tackle will be 2, so on |
@@ -179,9 +179,9 @@ The **features (columns)** will include crucial in-game variables of the event p
 
 **Positional Information**
 
-| ChannelPhysical | Channel in which the event occurs, the order of the channels from left to right is as follows: SL, NL, L, C, R, NR, SR |
+| ChannelPhysical | Channel in which the event occurs, the order of the channels from left to right is as follows: SL, NL, L, C, R, NR, SR |
 | :---- | :---- |
-| ChannelPlayer | Channel in which the player is, the order of the channels from left to right is as follows: SL, NL, L, C, R, NR, SR |
+| ChannelPlayer | Channel in which the player is, the order of the channels from left to right is as follows: SL, NL, L, C, R, NR, SR |
 | SectionPhysical | Coordinate of the event, ranges from \-10 to \-100, see diagrams for detail on the meaning of the values. |
 | SectionPlayer | Coordinate of the player, ranges from \-10 to \-100, see diagrams for detail on the meaning of the values. |
 | XmPhysical | Accurate X coordinate for the event, Range 0, 100\. To one decimal place. |
@@ -202,13 +202,13 @@ The **features (columns)** will include crucial in-game variables of the event p
 
 **Event Information**
 
-| EventCode | Unique 4 letter code for each event:PBFSPBHSPBISPBNSPBSS |
+| EventCode | Unique 4 letter code for each event:PBFS PBHS PBIS PBNS PBSS |
 | :---- | :---- |
 | EventName | Description of event |
 | Qualifier1 | Event Result {Won, Lost} |
 | Qualifier1Name | Qualifier 1 name Event Result |
 | Qualifier2 | PTB Contest {Lost, Stays on feet, Tackled to Ground} |
-| Qualifier2Name | Qualifier 2 name Contest |
+| Qualifier2Name | Qualifier 2 name Contest |
 | Qualifier3 | Set type {Good Ball, Yardage} |
 | Qualifier3Name | Qualifier 3 name Set type |
 
